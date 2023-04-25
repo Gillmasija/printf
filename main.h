@@ -7,14 +7,14 @@
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
-/*THESE ARE FLAGS */
+/* FLAGS */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
 #define F_HASH 8
 #define F_SPACE 16
 
-/* SIZES USED */
+/* SIZES */
 #define S_LONG 2
 #define S_SHORT 1
 
@@ -22,7 +22,7 @@
  * struct fmt - Struct op
  *
  * @fmt: The format.
- * @fn: Associated functions.
+ * @fn: The function associated.
  */
 struct fmt
 {
@@ -35,7 +35,7 @@ struct fmt
  * typedef struct fmt fmt_t - Struct op
  *
  * @fmt: The format.
- * @fm_t: function associated.
+ * @fm_t: The function associated.
  */
 typedef struct fmt fmt_t;
 
@@ -113,4 +113,5 @@ int is_digit(char);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
+
 #endif /* MAIN_H */
